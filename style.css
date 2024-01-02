@@ -1,0 +1,164 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.6rem;
+    background: url(images/bg-intro-desktop.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: repeat-y;
+    background-color: hsl(0, 100%, 74%);
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.grid-content {
+    max-width: 110rem;
+    display: grid;
+    gap: 2.8rem;
+    grid-template-columns: 1fr 1fr;
+}
+
+/* Grid 1st column Styling */
+
+.grid-1-col {
+    color: #fff;
+    margin-top: 20rem;
+}
+
+.head-style {
+    font-size: 4rem;
+    margin-bottom: 2rem;
+    line-height: 1;
+    font-weight: 700;
+}
+
+.para-1-col {
+    color: rgb(236, 236, 227);
+}
+
+/* Grid 2nd column Styling */ 
+
+.grid-2-col {
+   padding: 4rem;
+}
+
+.top-head {
+    background-color:  hsl(248, 32%, 49%);
+    color: #fff;
+    text-align: center;
+    padding: 1.2rem;
+    border-radius: 1.4rem;
+    margin-bottom: 1.8rem;
+    box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+}
+
+.para-head {
+    font-weight: 300;
+    font-size: 1.4rem;
+}
+
+.para-head span {
+    font-weight: 600;
+}
+
+.form-fill {
+    background-color: #fff;
+    display: grid;
+    grid-template-columns: 1fr;
+    padding: 3rem;
+    border-radius: 1.2rem;
+    box-shadow: rgba(0, 0, 0, 0.19) 0px 5px 5px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+}
+
+.input {
+    padding: 1.4rem;
+    outline: none;
+    width: 100%;
+}
+
+.input-field {
+    position: relative;
+    margin-bottom: 1.8rem;
+}
+
+.error {
+    position: absolute;
+    left: 88%;
+    top: 18%;
+}
+
+.error-para {
+    font-size: 1rem;
+    font-style: italic;
+    font-weight: 500;
+    color:hsl(0, 100%, 74%);
+    text-align: end;
+    margin-top:0.8rem;
+}
+
+.btn-primary {
+    text-align: center;
+    padding: 1.4rem;
+    font-weight: 600;
+    background-color: hsl(154, 59%, 51%);
+    border: none;
+    color: #fff;
+    text-transform: uppercase;
+    border-radius: 0.8rem;
+    transition: all 0.3s;
+}
+
+.btn-primary:hover{
+    cursor: pointer;
+    background-color:hsl(154, 58%, 64%) ;
+}
+
+.para-form {
+    margin-top: 1rem;
+    font-size: 1rem;
+    text-align: center;
+    color: hsl(246, 25%, 77%);
+}
+
+.para-form span {
+    color: hsl(0, 100%, 74%);
+    font-weight: 700;
+}
+
+.hidden {
+    display: none;
+}
+
+@media (max-width:27em) {
+    .grid-content {
+        grid-template-columns: 1fr;
+        padding: 0 1rem;
+    }
+
+    .grid-1-col {
+        margin-top: 3rem;
+        text-align: center;
+    }
+
+    .head-style {
+        font-size: 3.5rem;
+    }
+
+    .para-1-col {
+        font-size: 1.8rem;
+    }
+}

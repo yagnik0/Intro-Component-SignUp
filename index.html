@@ -1,13 +1,61 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="images/favicon-32x32.png" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
     <title>Intro-Component-SignUp</title>
 </head>
+
 <body>
-    
+    <main class="container">
+        <div class="grid-content">
+            <div class="grid-1-col">
+                <h1 class="head-style">
+                    Learn to code by watching others
+                </h1>
+                <p class="para-1-col">
+                    See how experienced developers solve problems in real time. Watching scripted tutorial is great, but
+                    understanding how developers thinks is invaluable.
+                </p>
+            </div>
+            <div class="grid-2-col">
+                <div class="top-head">
+                    <p class="para-head"><span>Try it free for 7 days</span> then $20/mo. thereafter</p>
+                </div>
+                <form action="#" class="form-fill">
+                    <div class="input-field">
+                        <input type="text" placeholder="First Name" id="first-name" class="input">
+                        <img src="images/icon-error.svg" alt="error-icon" class="error hidden">
+                        <p class="error-para hidden">First Name cannot be empty</p>
+                    </div>
+                    <div class="input-field">
+                        <input type="text" placeholder="Last Name" id="last-name" class="input">
+                        <img src="images/icon-error.svg" alt="error-icon" class="error hidden">
+                        <p class="error-para hidden">Last Name cannot be empty</p>
+                    </div>
+                    <div class="input-field">
+                        <input type="email" placeholder="Email Address" id="eamil-id" class="input">
+                        <img src="images/icon-error.svg" alt="error-icon" class="error hidden">
+                        <p class="error-para hidden">Looks like this is not an email</p>
+                    </div>
+                    <div class="input-field">
+                        <input type="password" placeholder="Password" id="password" class="input">
+                        <img src="images/icon-error.svg" alt="error-icon" class="error hidden">
+                        <p class="error-para hidden">Password cannot be empty</p>
+                    </div>
+                    <button type="submit" class="btn-primary"> Claim your Free Trial</button>
+                    <p class="para-form"> By clicking the button, you are agreeing to our <span>Terms and
+                            Services</span></p>
+                </form>
+            </div>
+        </div>
+    </main>
 </body>
+
 </html>
