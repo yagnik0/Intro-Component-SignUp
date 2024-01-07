@@ -86,8 +86,14 @@ body {
 
 .input {
     padding: 1.4rem;
+    border: 1px solid grey;
+    border-radius: 0.8rem;
     outline: none;
     width: 100%;
+}
+
+.input:focus{
+    border: 1.5px solid #000;
 }
 
 .input-field {
